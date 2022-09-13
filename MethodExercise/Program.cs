@@ -11,15 +11,53 @@ if (age <= 125)
 else
     Console.WriteLine("Woah....... your different!");
 Console.WriteLine("--------------------------------------");
-Console.WriteLine("Last question!");
+if (age <= 20)
+{
+    Console.WriteLine($"What is your favorite type of video game console {age} year old {name}? ONLY ONE!");
+    var videoGameConsole = Console.ReadLine();
+}
+else if (age > 125)
+{
+    Console.WriteLine($"Are you actually {age} years old? Put in your real age.......");
+    int Age1 = Convert.ToInt32(Console.ReadLine());
+    if (Age1 > 125)
+    {   
+        
+        Console.WriteLine($"Ok... sorry for questioning your intelligence {name}.... but.....");
+        Console.WriteLine($"No one is that old... put in your real age:");
+        int age2 = Convert.ToInt32(Console.ReadLine());
+        while (age2 > 125)
+        {
+            if (age2 <= 125)
+            {
+                break;
+            }
+            else
+            {
+                Console.WriteLine("Sorry.... but thats impossible!!!!!!!!!!!!");
+                Console.WriteLine($"No one is that old... put in your real age:");
+                age2 = Convert.ToInt32(Console.ReadLine());
+            }
+        }
+    }
+    else
+    {
+        Console.WriteLine("Hah! I thought so!");
+    }
+}
+else
+{
+    Console.WriteLine($"What is your job {name}?");
+    var job = Console.ReadLine();
+}
+
 Console.WriteLine("--------------------------------------");
-Console.WriteLine("What is your favorite type of tree? ONLY ONE!");
+Console.WriteLine("Hmmm...... thats acceptable...");
+Console.WriteLine("--------------------------------------");
+Console.WriteLine("What is your favorite type of tree? ONLY ONE! (Press enter to skip)");
 var tree = Console.ReadLine();
 Console.WriteLine("--------------------------------------");
-Console.WriteLine($"Ooooo..... thats a nice one! Wait! {name}! One more question!");
-Console.WriteLine("--------------------------------------");
-Console.WriteLine($"What is your favorite type of video game console {age} year old {name}? ONLY ONE!");
-var videoGameConsole = Console.ReadLine();
+Console.WriteLine($"Ooooo..... thats a nice {name}!");
 Console.WriteLine("--------------------------------------");
 Console.WriteLine("Wow..... your good at this.... I guess I can let you go now :)");
 Console.WriteLine("--------------------------------------");
