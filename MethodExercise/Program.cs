@@ -57,7 +57,7 @@ Console.WriteLine("--------------------------------------");
 Console.WriteLine("What is your favorite type of tree? ONLY ONE! (Press enter to skip)");
 var tree = Console.ReadLine();
 Console.WriteLine("--------------------------------------");
-Console.WriteLine($"Ooooo..... thats a nice {name}!");
+Console.WriteLine($"Ooooo..... thats a nice one {name}!");
 Console.WriteLine("--------------------------------------");
 Console.WriteLine("Wow..... your good at this.... I guess I can let you go now :)");
 Console.WriteLine("--------------------------------------");
