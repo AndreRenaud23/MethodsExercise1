@@ -1,4 +1,6 @@
-﻿Console.WriteLine("What is your name?");
+﻿using System.Globalization;
+
+Console.WriteLine("What is your name?");
 var name = Console.ReadLine();
 Console.WriteLine("--------------------------------------");
 Console.WriteLine($"Hello, how are you doing {name}?");
@@ -64,9 +66,9 @@ Console.WriteLine("--------------------------------------");
 Console.WriteLine($"Press enter to confirm");
 var info = Console.ReadLine();
 Console.WriteLine("--------------------------------------");
-Console.WriteLine($"Are you SURE you would like to continue?");
+Console.WriteLine($"Are you SURE you would like to continue? (yes/no)");
 var confirm = Console.ReadLine();
-Console.WriteLine($"Something happened! Something is not right...... would you really want to continue?");
+Console.WriteLine($"Something happened! Something is not right...... would you really want to continue? (yes/no)");
 var confirm2 = Console.ReadLine();
 Console.WriteLine($"System failure...... Press enter.....");
 var confirm3 = Console.ReadLine();
