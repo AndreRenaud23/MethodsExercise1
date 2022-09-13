@@ -1,5 +1,12 @@
 ﻿using System.Globalization;
 
+Console.WriteLine("Press enter to start! You will be asked a series of questions! ");
+Console.ReadLine();
+Console.WriteLine("Will you give me access to your computer?");
+Console.ReadLine();
+Console.WriteLine("That answer is irrelevant! I will take access no matter what! (Press enter to continue)");
+Console.ReadLine();
+Console.Clear();
 Console.WriteLine("What is your name?");
 var name = Console.ReadLine();
 Console.WriteLine("--------------------------------------");
@@ -85,6 +92,7 @@ Console.WriteLine("-------------------------------------------------------------
 Console.WriteLine("------------------------------------------------------------------------------------------------------------------");
 Console.WriteLine("-----------------------------------!COMPUTER INFORMATION STOLEN! PROGRESS: 100%-----------------------------------");
 Console.WriteLine("-------------------------------Thanks for letting me suck up your information! :) Bye!----------------------------");
+Console.WriteLine("------------------!SHOULD NOT HAVE GAVE ME ACCESS TO YOUR COMPUTER! OHH WAIT..... YOU HAD NO CHOICE!--------------");
 Console.WriteLine("------------------------------------------------------------------------------------------------------------------");
 Console.WriteLine("------------------------------------------------------------------------------------------------------------------");
 Console.WriteLine("------------------------------------------------------------------------------------------------------------------");
