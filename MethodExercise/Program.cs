@@ -1,10 +1,29 @@
 ﻿using System.Globalization;
 
+Console.WriteLine("--------------------------------------");
 Console.WriteLine("Press enter to start! You will be asked a series of questions! ");
 Console.ReadLine();
+Console.WriteLine("--------------------------------------");
 Console.WriteLine("Will you give me access to your computer?");
-Console.ReadLine();
-Console.WriteLine("That answer is irrelevant! I will take access no matter what! (Press enter to continue)");
+var access = Console.ReadLine();
+switch (access.ToLower())
+{
+    case "yes":
+        Console.WriteLine("Ok... (Press 'enter' to continue)");
+        Console.WriteLine("--------------------------------------");
+        break;
+
+    case "no":
+        Console.WriteLine("Hmm... I'm just gonna take it anyway :) (Press 'enter' to continue)");
+        Console.WriteLine("--------------------------------------");
+        break;
+
+
+    default:
+        Console.WriteLine("Hmm... thats not an option... I will take that as a yes (Press 'enter' to continue)");
+        Console.WriteLine("--------------------------------------");
+        break;
+}
 Console.ReadLine();
 Console.Clear();
 Console.WriteLine("What is your name?");
@@ -24,6 +43,10 @@ if (age <= 20)
 {
     Console.WriteLine($"What is your favorite type of video game console {age} year old {name}? ONLY ONE!");
     var videoGameConsole = Console.ReadLine();
+    
+
+
+
 }
 else if (age > 125)
 {
@@ -75,7 +98,7 @@ var info = Console.ReadLine();
 Console.WriteLine("--------------------------------------");
 Console.WriteLine($"Are you SURE you would like to continue? (yes/no)");
 var confirm = Console.ReadLine();
-Console.WriteLine($"Something happened! Something is not right...... would you really want to continue? (yes/no)");
+Console.WriteLine($"Something happened! Something is not right... reconfirm... do you want to continue? (yes/no)");
 var confirm2 = Console.ReadLine();
 Console.WriteLine($"System failure...... Press enter.....");
 var confirm3 = Console.ReadLine();
